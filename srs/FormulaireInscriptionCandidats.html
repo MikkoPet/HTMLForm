@@ -40,7 +40,8 @@
                     type="number" 
                     name="Age" 
                     placeholder="35" 
-                    maxlength="3" 
+                    min="1"
+                    max="150" 
                     id="Age" 
                     required 
                 >
@@ -80,7 +81,7 @@
                 <input 
                     type="number" 
                     name="Code Postal" 
-                    min="0"
+                    min="01000"
                     max="99999"
                     placeholder="75000" 
                     id="CodeP" 
@@ -115,7 +116,7 @@
                 <label for="Nationalité">Nationalité:</label>              
                 <select name="Nationalité" 
                 id="Nationalité">                    
-                    <option value="Française" id="Nationalité">Française</option>
+                    <option value="Française" id="Nationalité" selected>Française</option>
                     <option value="Belge">Belge</option>
                     <option value="Anglaise">Anglaise</option>
                     <option value="Suisse">Suisse</option>
@@ -152,7 +153,7 @@
                     type="number" 
                     name="N° secu" 
                     placeholder="190128305600522" 
-                    min="0"
+                    min="100010100000000"
                     max="999999999999999"
                     id="Secu" 
                     required
@@ -167,6 +168,7 @@
                     maxlength="9" 
                     placeholder="59RF05400" 
                     id="NPassport"
+                    required
                 >
             </fieldset>    
 
@@ -176,6 +178,7 @@
                     type="date" 
                     name="IssueDate Passeport" 
                     id="IssueDate Passport"
+                    required
                 >
             </fieldset>    
 
@@ -185,6 +188,7 @@
                     type="date" 
                     name="FinPasseport" 
                     id="FinPasseport"
+                    required
                 >
             </fieldset>    
             
@@ -192,6 +196,7 @@
                 type="submit" 
                 name="submit" 
                 value="Confirmer"
+                required
             >
         </form>
     </body>
