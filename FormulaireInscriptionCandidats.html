@@ -15,17 +15,35 @@
 
             <fieldset>
                 <label for="Prenom">Prénom:</label>                
-                <input type="text" name="Prénom" placeholder="Paul">
+                <input 
+                    type="text" 
+                    name="Prénom" 
+                    placeholder="Paul" 
+                    required
+                >
             </fieldset>
 
             <fieldset>    
                 <label for="Nom">Nom:</label>                
-                <input type="text" name="Nom" placeholder="Dupont" id="Nom">
+                <input 
+                    type="text" 
+                    name="Nom" 
+                    placeholder="Dupont" 
+                    id="Nom" 
+                    required
+                >
             </fieldset>    
 
             <fieldset>    
                 <label for="Age">Age:</label>                
-                <input type="number" name="Age" placeholder="35" id="Age">
+                <input 
+                    type="number" 
+                    name="Age" 
+                    placeholder="35" 
+                    maxlength="3" 
+                    id="Age" 
+                    required 
+                >
             </fieldset>    
 
             <fieldset>   
@@ -36,32 +54,65 @@
 
             <fieldset>    
                 <label for="Email">Adresse Mail:</label>                
-                <input type="email" name="Email" placeholder="paul.dupont@yahoo.com" id="Email">
+                <input 
+                    type="email" 
+                    name="Email" 
+                    placeholder="paul.dupont@yahoo.com" 
+                    id="Email" 
+                    required
+                >
             </fieldset>    
                 
             <fieldset>    
                 <label for="AdresseP">Adresse Postale:</label>                
-                <input type="text" name="Adresse" placeholder="1 rue Charles de Gaulle, apt 13" id="AdresseP">
+                <textarea 
+                    type="text" 
+                    name="Adresse" 
+                    placeholder="1 rue Charles de Gaulle, apt 13" 
+                    id="AdresseP" 
+                    required
+                >
+                </textarea>
             </fieldset>    
 
             <fieldset>    
                 <label for="CodeP">Code Postal:</label>                
-                <input type="number" name="Code Postal" placeholder="75000" id="CodeP">
+                <input 
+                    type="number" 
+                    name="Code Postal" 
+                    maxlength="5" 
+                    placeholder="75000" 
+                    id="CodeP" 
+                    required
+                >
             </fieldset>    
 
             <fieldset>    
                 <label for="Ville">Ville:</label>
-                <input type="text" name="Ville" placeholder="Paris" id="Ville">
+                <input 
+                    type="text" 
+                    name="Ville" 
+                    placeholder="Paris" 
+                    id="Ville" 
+                    required
+                >
             </fieldset>    
 
             <fieldset>    
                 <label for="Metier">Métier exercé:</label>               
-                <input type="text" name="Métier" placeholder="Développeur Web" id="Metier">
+                <input 
+                    type="text" 
+                    name="Métier" 
+                    placeholder="Développeur Web" 
+                    id="Metier" 
+                    required
+                >
             </fieldset>   
 
             <fieldset>    
                 <label for="Nationalité">Nationalité:</label>              
-                <select name="Nationalité" id="Nationalité">                    
+                <select name="Nationalité" 
+                id="Nationalité">                    
                     <option value="Française">Française</option>
                     <option value="Belge">Belge</option>
                     <option value="Anglaise">Anglaise</option>
@@ -71,34 +122,69 @@
 
             <fieldset>    
                 <label for="DdN">Date de Naissance:</label>               
-                <input type="date" name="DdN" id="DdN">
+                <input 
+                    type="date"                 
+                    name="DdN" 
+                    id="DdN" 
+                    required
+                >
             </fieldset>    
                 
             <fieldset>    
                 <label for="Vdn">Ville de Naissance:</label>                
-                <input type="text" name="VdN" placeholder="St Tropez" id="VdN">
+                <input 
+                    type="text" 
+                    name="VdN" 
+                    placeholder="St Tropez" 
+                    id="VdN" 
+                    required
+                >
             </fieldset>    
 
             <fieldset>   
                 <label for="Secu">Numéro de sécurité sociale:</label>                
-                <input type="number" name="N° secu" placeholder="1 90 12 83 056 005 22" id="Secu">
+                <input  
+                    type="number" 
+                    name="N° secu" 
+                    placeholder="1 90 12 83 056 005 22" 
+                    id="Secu" 
+                    required
+                >
             </fieldset>     
 
             <fieldset>   
                 <label for="NPassport">Numéro du passeport:</label>               
-                <input type="number" name="N° Passport" placeholder="59RF05400" id="NPassport">
+                <input 
+                    type="text" 
+                    name="N° Passport" 
+                    maxlength="9" 
+                    placeholder="59RF05400" 
+                    id="NPassport"
+                >
             </fieldset>    
 
             <fieldset>    
                 <label for="IssueDate Passport">Date de délivrance du passeport:</label>              
-                <input type="date" name="IssueDate Passeport" id="IssueDate Passport">
+                <input 
+                    type="date" 
+                    name="IssueDate Passeport" 
+                    id="IssueDate Passport"
+                >
             </fieldset>    
 
             <fieldset>    
                 <label for="FinPasseport">Date de validité du passeport:</label>                
-                <input type="date" name="FinPasseport" id="FinPasseport">
+                <input 
+                    type="date" 
+                    name="FinPasseport" 
+                    id="FinPasseport"
+                >
             </fieldset>    
             
-            <input type="submit" name="submit" value="Confirmer">
+            <input 
+                type="submit" 
+                name="submit" 
+                value="Confirmer"
+            >
         </form>
     </body>
