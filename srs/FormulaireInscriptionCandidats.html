@@ -79,10 +79,10 @@
             <fieldset>    
                 <label for="CodeP">Code Postal (5 chiffres):</label>                
                 <input 
-                    type="number" 
+                    type="text" 
                     name="Code Postal" 
-                    min="01000"
-                    max="99999"
+                    maxlength="5" 
+                    pattern="[0-9]{5}"
                     placeholder="75000" 
                     id="CodeP" 
                     required
@@ -149,25 +149,89 @@
 
             <fieldset>   
                 <label for="Secu">Numéro de sécurité sociale (sans espaces):</label>                
-                <input  
-                    type="number" 
-                    name="N° secu" 
-                    placeholder="190128305600522" 
-                    min="100010100000000"
-                    max="999999999999999"
-                    id="Secu" 
+                <input 
+                    type="text" 
+                    name="N°SecGEND" 
+                    maxlength="1"
+                    pattern="[1-2]{1}" 
+                    placeholder="1"
+                    id="NPassport"
+                    required
+                >
+                <input
+                    type="text"
+                    name="N°SecYoB"
+                    maxlength="2"
+                    placeholder="90" 
+                    pattern="[0-9]{2}"
+                    required
+                >
+                <input 
+                    type="text" 
+                    name="N°SecMoB" 
+                    maxlength="2"
+                    pattern="[0-9]{2}" 
+                    placeholder="12"
+                    required
+                >
+                <input
+                    type="text"
+                    name="N°SecRoB"
+                    maxlength="2"
+                    pattern="[0-9]{2}"
+                    placeholder="83"
+                    required
+                >
+                <input
+                    type="text"
+                    name="SecuCoCo"
+                    maxlength="3"
+                    pattern="[0-9]{3}"
+                    placeholder="056"
+                    required
+                >
+                <input
+                    type="text"
+                    name="SecuOrd"
+                    maxlength="3"
+                    pattern="[0-9]{3}"
+                    placeholder="005"
+                    required
+                >
+                <input
+                    type="text"
+                    name="SecuKey"
+                    maxlength="2"
+                    pattern="[0-9]{2}"
+                    placeholder="22"
                     required
                 >
             </fieldset>     
 
             <fieldset>   
-                <label for="NPassport">Numéro du passeport (7 chiffres et 2 lettres):</label>               
+                <label for="NPassport">Numéro du passeport:</label>               
                 <input 
                     type="text" 
-                    name="N° Passport" 
-                    maxlength="9" 
-                    placeholder="59RF05400" 
+                    name="N° Passport11" 
+                    maxlength="2"
+                    pattern="[0-9]{2}" 
+                    placeholder="59"
                     id="NPassport"
+                    required
+                >
+                <input
+                    type="text"
+                    name="N° PassportXX"
+                    placeholder="RF" 
+                    pattern="[A-Z]{2}"
+                    required
+                >
+                <input 
+                    type="text" 
+                    name="N° Passport11111" 
+                    maxlength="5"
+                    pattern="[0-9]{5}" 
+                    placeholder="56893"
                     required
                 >
             </fieldset>    
