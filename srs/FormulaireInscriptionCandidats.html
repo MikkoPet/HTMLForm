@@ -104,7 +104,8 @@
             <fieldset>    
                 <label for="Metier">Métier exercé:</label>               
                 <select name="Metier" 
-                id="Metier">                    
+                id="Metier">
+                    <option value="-" hidden selected>-</option>                    
                     <option value="Developpeur Front-end">Developpeur Front-end</option>
                     <option value="Developpeur Back-end">Developpeur Back-end</option>
                     <option value="Designer">Designer graphique</option>
@@ -212,7 +213,6 @@
                     pattern="[0-9]{2}"
                     placeholder="22"
                     size="2"
-                    required
                 >
             </fieldset>     
 
