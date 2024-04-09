@@ -49,7 +49,8 @@
                     Sexe:
                 </td>
                 <td>
-                    <input type="text" name="Sexe">
+                    <input type="radio" name="Sexe" value="H" checked> Homme
+                    <input type="radio" name="Sexe" value="F"> Femme
                 </td>
                 </tr>
 
@@ -103,7 +104,12 @@
                     Nationalité:
                 </td>
                 <td>
-                    <input type="text" name="Nationalité" placeholder="Française">
+                    <select name="Nationalité">
+                        <option value="Française">Française</option>
+                        <option value="Belge">Belge</option>
+                        <option value="Anglaise">Anglaise</option>
+                        <option value="Suisse">Suisse</option>
+                    </select>
                 </td>
                 </tr>
 
@@ -162,5 +168,7 @@
                 </tr>
 
             </table>
+            
+            <input type="submit" name="submit" value="Confirmer">
         </form>
     </body>
