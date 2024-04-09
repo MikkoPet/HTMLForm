@@ -11,163 +11,93 @@
         </h1>
 
         <form>
-            <table>
-                <tr>
-                    <th></th>
-                    <th></th>
-                </tr>
+            
 
-                <tr>
-                <td>
-                    Prénom:
-                </td>
-                <td>
-                    <input type="text" name="Prénom" placeholder="Paul">
-                </td>
-                </tr>
+            <fieldset>
+                <label for="Prenom">Prénom:</label>                
+                <input type="text" name="Prénom" placeholder="Paul">
+            </fieldset>
 
-                <tr>
-                <td>
-                    Nom:
-                </td>
-                <td>
-                    <input type="text" name="Nom" placeholder="Dupont">
-                </td>
-                </tr>
+            <fieldset>    
+                <label for="Nom">Nom:</label>                
+                <input type="text" name="Nom" placeholder="Dupont" id="Nom">
+            </fieldset>    
 
-                <tr>
-                <td>
-                    Age:
-                </td>
-                <td>
-                    <input type="number" name="Age" placeholder="35">
-                </td>
-                </tr>
+            <fieldset>    
+                <label for="Age">Age:</label>                
+                <input type="number" name="Age" placeholder="35" id="Age">
+            </fieldset>    
 
-                <tr>
-                <td>
-                    Sexe:
-                </td>
-                <td>
-                    <input type="radio" name="Sexe" value="H" checked> Homme
-                    <input type="radio" name="Sexe" value="F"> Femme
-                </td>
-                </tr>
+            <fieldset>   
+                <label for="Sexe">Sexe:</label>                
+                <input type="radio" name="Sexe" id="Sexe" value="H" checked> Homme
+                <input type="radio" name="Sexe" id="Sexe" value="F"> Femme
+            </fieldset>     
 
-                <tr>
-                <td>
-                    Adresse Mail:
-                </td>
-                <td>
-                    <input type="email" name="Email" placeholder="paul.dupont@yahoo.com">
-                </td>
-                </tr>
+            <fieldset>    
+                <label for="Email">Adresse Mail:</label>                
+                <input type="email" name="Email" placeholder="paul.dupont@yahoo.com" id="Email">
+            </fieldset>    
                 
-                <tr>
-                <td>
-                    Adresse Postale:
-                </td>
-                <td>
-                    <input type="text" name="Adresse" placeholder="1 rue Charles de Gaulle, apt 13">
-                </td>
-                </tr>
+            <fieldset>    
+                <label for="AdresseP">Adresse Postale:</label>                
+                <input type="text" name="Adresse" placeholder="1 rue Charles de Gaulle, apt 13" id="AdresseP">
+            </fieldset>    
 
-                <tr>
-                <td>
-                    Code Postal:
-                </td>
-                <td>
-                    <input type="number" name="Code Postal" placeholder="75000">
-                </td>
-                </tr>
+            <fieldset>    
+                <label for="CodeP">Code Postal:</label>                
+                <input type="number" name="Code Postal" placeholder="75000" id="CodeP">
+            </fieldset>    
 
-                <tr>
-                <td>
-                    Ville:
-                </td>
-                <td>
-                    <input type="text" name="Ville" placeholder="Paris">
-                </td>
-                </tr>
+            <fieldset>    
+                <label for="Ville">Ville:</label>
+                <input type="text" name="Ville" placeholder="Paris" id="Ville">
+            </fieldset>    
 
-                <tr>
-                <td>
-                    Métier exercé:
-                </td>
-                <td>
-                    <input type="text" name="Métier" placeholder="Développeur Web">
-                </td>
-                </tr>
+            <fieldset>    
+                <label for="Metier">Métier exercé:</label>               
+                <input type="text" name="Métier" placeholder="Développeur Web" id="Metier">
+            </fieldset>   
 
-                <tr>
-                <td>
-                    Nationalité:
-                </td>
-                <td>
-                    <select name="Nationalité">
-                        <option value="Française">Française</option>
-                        <option value="Belge">Belge</option>
-                        <option value="Anglaise">Anglaise</option>
-                        <option value="Suisse">Suisse</option>
-                    </select>
-                </td>
-                </tr>
+            <fieldset>    
+                <label for="Nationalité">Nationalité:</label>              
+                <select name="Nationalité" id="Nationalité">                    
+                    <option value="Française">Française</option>
+                    <option value="Belge">Belge</option>
+                    <option value="Anglaise">Anglaise</option>
+                    <option value="Suisse">Suisse</option>
+                </select>
+            </fieldset>    
 
-                <tr>
-                <td>
-                    Date de Naissance:
-                </td>
-                <td>
-                    <input type="date" name="DdN">
-                </td>
-                </tr>
+            <fieldset>    
+                <label for="DdN">Date de Naissance:</label>               
+                <input type="date" name="DdN" id="DdN">
+            </fieldset>    
                 
-                <tr>
-                <td>
-                    Ville de Naissance:
-                </td>
-                <td>
-                    <input type="text" name="VdN" placeholder="St Tropez">
-                </td>
-                </tr>
+            <fieldset>    
+                <label for="Vdn">Ville de Naissance:</label>                
+                <input type="text" name="VdN" placeholder="St Tropez" id="VdN">
+            </fieldset>    
 
-                <tr>
-                <td>
-                    Numéro de sécurité sociale:
-                </td>
-                <td>
-                    <input type="number" name="N° secu" placeholder="1 90 12 83 056 005 22">
-                </td>
-                </tr>
+            <fieldset>   
+                <label for="Secu">Numéro de sécurité sociale:</label>                
+                <input type="number" name="N° secu" placeholder="1 90 12 83 056 005 22" id="Secu">
+            </fieldset>     
 
-                <tr>
-                <td>
-                    Numéro du passeport:
-                </td>
-                <td>
-                    <input type="number" name="N° Passport" placeholder="59RF05400">
-                </td>
-                </tr>
+            <fieldset>   
+                <label for="NPassport">Numéro du passeport:</label>               
+                <input type="number" name="N° Passport" placeholder="59RF05400" id="NPassport">
+            </fieldset>    
 
-                <tr>
-                <td>
-                    Date de délivrance du passeport:
-                </td>
-                <td>
-                    <input type="date" name="IssueDate Passeport">
-                </td>
-                </tr>
+            <fieldset>    
+                <label for="IssueDate Passport">Date de délivrance du passeport:</label>              
+                <input type="date" name="IssueDate Passeport" id="IssueDate Passport">
+            </fieldset>    
 
-                <tr>
-                <td>
-                    Date de validité du passeport:
-                </td>
-                <td>
-                    <input type="date" name="FinPasseport">
-                </td>
-                </tr>
-
-            </table>
+            <fieldset>    
+                <label for="FinPasseport">Date de validité du passeport:</label>                
+                <input type="date" name="FinPasseport" id="FinPasseport">
+            </fieldset>    
             
             <input type="submit" name="submit" value="Confirmer">
         </form>
