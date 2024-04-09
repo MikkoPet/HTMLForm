@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us"> 
+<html lang="fr"> 
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
@@ -19,6 +19,7 @@
                     type="text" 
                     name="Prénom" 
                     placeholder="Paul" 
+                    id="Prenom"
                     required
                 >
             </fieldset>
@@ -67,7 +68,6 @@
             <fieldset>    
                 <label for="AdresseP">Adresse Postale:</label>                
                 <textarea 
-                    type="text" 
                     name="Adresse" 
                     placeholder="1 rue Charles de Gaulle, apt 13" 
                     id="AdresseP" 
@@ -104,7 +104,7 @@
                 <label for="Metier">Métier exercé:</label>               
                 <select name="Metier" 
                 id="Metier">                    
-                    <option value="Developpeur Front-end" id="Metier">Developpeur Front-end</option>
+                    <option value="Developpeur Front-end">Developpeur Front-end</option>
                     <option value="Developpeur Back-end">Developpeur Back-end</option>
                     <option value="Designer">Designer graphique</option>
                     <option value="CM">Community Manager</option>
@@ -116,7 +116,7 @@
                 <label for="Nationalité">Nationalité:</label>              
                 <select name="Nationalité" 
                 id="Nationalité">                    
-                    <option value="Française" id="Nationalité" selected>Française</option>
+                    <option value="Française" selected>Française</option>
                     <option value="Belge">Belge</option>
                     <option value="Anglaise">Anglaise</option>
                     <option value="Suisse">Suisse</option>
@@ -137,7 +137,7 @@
             </fieldset>    
                 
             <fieldset>    
-                <label for="Vdn">Ville de Naissance:</label>                
+                <label for="VdN">Ville de Naissance:</label>                
                 <input 
                     type="text" 
                     name="VdN" 
@@ -173,11 +173,11 @@
             </fieldset>    
 
             <fieldset>    
-                <label for="IssueDate Passport">Date de délivrance du passeport:</label>              
+                <label for="IssueDatePassport">Date de délivrance du passeport:</label>              
                 <input 
                     type="date" 
                     name="IssueDate Passeport" 
-                    id="IssueDate Passport"
+                    id="IssueDatePassport"
                     required
                 >
             </fieldset>    
@@ -196,7 +196,6 @@
                 type="submit" 
                 name="submit" 
                 value="Confirmer"
-                required
             >
         </form>
     </body>
