@@ -10,294 +10,295 @@
             Formulaire d'inscription pour candidat.
         </h1>
 
-        <table>
+        <fieldset>
+        <table>        
         <form>
             <tr>
                 <td>
-                <label for="Prenom">Prénom:</label>  
+                    <label for="Prenom">Prénom:</label>  
                 </td>
                 
                 <td>
-                <input 
-                    type="text" 
-                    name="Prénom" 
-                    placeholder="Paul" 
-                    id="Prenom"
-                    required
-                >
+                    <input 
+                        type="text" 
+                        name="Prénom" 
+                        placeholder="Paul" 
+                        id="Prenom"
+                        required
+                    >
                 </td>
-
             </tr>
 
             <tr>    
-
                 <td>
-                <label for="Nom">Nom:</label>    
+                    <label for="Nom">Nom:</label>    
                 </td>
                 
                 <td>
-                <input 
-                    type="text" 
-                    name="Nom" 
-                    placeholder="Dupont" 
-                    id="Nom" 
-                    required
-                >
+                    <input 
+                        type="text" 
+                        name="Nom" 
+                        placeholder="Dupont" 
+                        id="Nom" 
+                        required
+                    >
                 </td>
             </tr>    
 
-            <tr>    
+            <tr>       
                 <td>
-                <label for="Age">Age:</label>   
+                    <label for="Age">Age:</label>   
                 </td>
                 
                 <td>
-                <input 
-                    type="number" 
-                    name="Age" 
-                    placeholder="35" 
-                    min="1"
-                    max="150" 
-                    id="Age" 
-                    required 
-                >
+                    <input 
+                        type="number" 
+                        name="Age" 
+                        placeholder="35" 
+                        min="1"
+                        max="150" 
+                        id="Age" 
+                        required 
+                    >
                 </td>
-            </tr>    
+            
+            </tr> 
+        </fieldset>   
 
             <tr>   
                 <td>
-                <label for="Sexe">Sexe:</label> 
+                    <label for="Sexe">Sexe:</label> 
                 </td>
 
                 <td>              
-                <input type="radio" name="Sexe" id="Sexe" value="H" checked> Homme
-                <input type="radio" name="Sexe" value="F"> Femme
+                    <input type="radio" name="Sexe" id="Sexe" value="H" checked> Homme
+                    <input type="radio" name="Sexe" value="F"> Femme
                 </td>
             </tr>     
 
             <tr>
                 <td>    
-                <label for="Email">Adresse Mail:</label>
+                    <label for="Email">Adresse Mail:</label>
                 </td>
                 
                 <td>
-                <input 
-                    type="email" 
-                    name="Email" 
-                    placeholder="paul.dupont@yahoo.com" 
-                    id="Email" 
-                    required
-                >
+                    <input 
+                        type="email" 
+                        name="Email" 
+                        placeholder="paul.dupont@yahoo.com" 
+                        id="Email" 
+                        required
+                    >
                 </td>
             </tr>    
                 
             <tr>
                 <td>   
-                <label for="AdresseP">Adresse Postale:</label>
+                    <label for="AdresseP">Adresse Postale:</label>
                 </td>          
                 
                 <td>
-                <textarea 
-                    name="Adresse" 
-                    placeholder="1 rue Charles de Gaulle, apt 13" 
-                    id="AdresseP" 
-                    required
-                >
+                    <textarea 
+                        name="Adresse" 
+                        placeholder="1 rue Charles de Gaulle, apt 13" 
+                        id="AdresseP" 
+                        required
+                    >
                 </textarea>
                 </td>
             </tr>    
 
             <tr>    
                 <td>
-                <label for="CodeP">Code Postal (5 chiffres):</label>  
+                    <label for="CodeP">Code Postal (5 chiffres):</label>  
                 </td>
                      
                 <td>
-                <input 
-                    type="text" 
-                    name="Code Postal" 
-                    maxlength="5" 
-                    pattern="[0-9]{5}"
-                    placeholder="75000" 
-                    id="CodeP" 
-                    size="5"
-                    required
-                >
+                    <input 
+                        type="text" 
+                        name="Code Postal" 
+                        maxlength="5" 
+                        pattern="[0-9]{5}"
+                        placeholder="75000" 
+                        id="CodeP" 
+                        size="5"
+                        required
+                    >
                 </td>
             </tr>    
 
             <tr>    
                 <td>
-                <label for="Ville">Ville:</label>
+                    <label for="Ville">Ville:</label>
                 </td>
 
                 <td>
-                <input 
-                    type="text" 
-                    name="Ville" 
-                    placeholder="Paris" 
-                    id="Ville" 
-                    required
-                >
+                    <input 
+                        type="text" 
+                        name="Ville" 
+                        placeholder="Paris" 
+                        id="Ville" 
+                        required
+                    >
                 </td>
             </tr>    
 
             <tr>    
                 <td>
-                <label for="Metier">Métier exercé:</label>    
+                    <label for="Metier">Métier exercé:</label>    
                 </td>
                 
                 <td>
-                <select name="Metier" 
-                id="Metier">
-                    <option value="-" hidden selected>-</option>                    
-                    <option value="Developpeur Front-end">Developpeur Front-end</option>
-                    <option value="Developpeur Back-end">Developpeur Back-end</option>
-                    <option value="Designer">Designer graphique</option>
-                    <option value="CM">Community Manager</option>
-                    <option value="ProdManager">Production Manager</option>
-                </select>
+                    <select name="Metier" 
+                    id="Metier">
+                        <option value="-" hidden selected>-</option>                    
+                        <option value="Developpeur Front-end">Developpeur Front-end</option>
+                        <option value="Developpeur Back-end">Developpeur Back-end</option>
+                        <option value="Designer">Designer graphique</option>
+                        <option value="CM">Community Manager</option>
+                        <option value="ProdManager">Production Manager</option>
+                    </select>
                 </td>
             </tr>   
 
             <tr>    
                 <td>
-                <label for="Nationalité">Nationalité:</label>     
+                    <label for="Nationalité">Nationalité:</label>     
                 </td>
                 
                 <td>
-                <select name="Nationalité" 
-                id="Nationalité">                    
-                    <option value="Française" selected>Française</option>
-                    <option value="Belge">Belge</option>
-                    <option value="Anglaise">Anglaise</option>
-                    <option value="Suisse">Suisse</option>
-                    <option value="Allemande">Allemande</option>
-                    <option value="Italienne">Italienne</option>
-                    <option value="Algerienne">Algerienne</option>
-                </select>
+                    <select name="Nationalité" 
+                    id="Nationalité">                    
+                        <option value="Française" selected>Française</option>
+                        <option value="Belge">Belge</option>
+                        <option value="Anglaise">Anglaise</option>
+                        <option value="Suisse">Suisse</option>
+                        <option value="Allemande">Allemande</option>
+                        <option value="Italienne">Italienne</option>
+                        <option value="Algerienne">Algerienne</option>
+                    </select>
                 </td>
             </tr>    
 
             <tr>    
                 <td>
-                <label for="DdN">Date de Naissance:</label>               
+                    <label for="DdN">Date de Naissance:</label>               
                 </td>
                 
                 <td>
-                <input 
-                    type="date"                 
-                    name="DdN" 
-                    id="DdN" 
-                    required
-                >
+                    <input 
+                        type="date"                 
+                        name="DdN" 
+                        id="DdN" 
+                        required
+                    >
                 </td>
             </tr>    
                 
             <tr>    
                 <td>
-                <label for="VdN">Ville de Naissance:</label>    
+                    <label for="VdN">Ville de Naissance:</label>    
                 </td>
                 
                 <td>
-                <input 
-                    type="text" 
-                    name="VdN" 
-                    placeholder="St Tropez" 
-                    id="VdN" 
-                    required
-                >
+                    <input 
+                        type="text" 
+                        name="VdN" 
+                        placeholder="St Tropez" 
+                        id="VdN" 
+                        required
+                    >
                 </td>
             </tr>    
 
             <tr>   
                 <td>
-                <label for="Secu">Numéro de sécurité sociale (sans espaces):</label> 
+                    <label for="Secu">Numéro de sécurité sociale:</label> 
                 </td>
                 
                 <td>
-                <input 
-                    type="text" 
-                    name="N°SecGEND" 
-                    maxlength="1"
-                    pattern="[1-2]{1}" 
-                    placeholder="1"
-                    id="Secu"
-                    size="1"
-                    required
-                >
-                <input
-                    type="text"
-                    name="N°SecYoB"
-                    maxlength="2"
-                    placeholder="90" 
-                    pattern="[0-9]{2}"
-                    size="2"
-                    required
-                >
-                <input 
-                    type="text" 
-                    name="N°SecMoB" 
-                    maxlength="2"
-                    pattern="[0-9]{2}" 
-                    placeholder="12"
-                    size="2"
-                    required
-                >
-                <input
-                    type="text"
-                    name="N°SecRoB"
-                    maxlength="2"
-                    pattern="[0-9]{2}"
-                    placeholder="83"
-                    size="2"
-                    required
-                >
-                <input
-                    type="text"
-                    name="SecuCoCo"
-                    maxlength="3"
-                    pattern="[0-9]{3}"
-                    placeholder="056"
-                    size="3"
-                    required
-                >
-                <input
-                    type="text"
-                    name="SecuOrd"
-                    maxlength="3"
-                    pattern="[0-9]{3}"
-                    placeholder="005"
-                    size="3"
-                    required
-                >
-                <input
-                    type="text"
-                    name="SecuKey"
-                    maxlength="2"
-                    pattern="[0-9]{2}"
-                    placeholder="22"
-                    size="2"
-                >
+                    <input 
+                        type="text" 
+                        name="N°SecGEND" 
+                        maxlength="1"
+                        pattern="[1-2]{1}" 
+                        placeholder="1"
+                        id="Secu"
+                        size="1"
+                        required
+                    >
+                    <input
+                        type="text"
+                        name="N°SecYoB"
+                        maxlength="2"
+                        placeholder="90" 
+                        pattern="[0-9]{2}"
+                        size="2"
+                        required
+                    >
+                    <input 
+                        type="text" 
+                        name="N°SecMoB" 
+                        maxlength="2"
+                        pattern="[0-9]{2}" 
+                        placeholder="12"
+                        size="2"
+                        required
+                        >
+                    <input
+                        type="text"
+                        name="N°SecRoB"
+                        maxlength="2"
+                        pattern="[0-9]{2}"
+                        placeholder="83"
+                        size="2"
+                        required
+                    >
+                    <input
+                        type="text"
+                        name="SecuCoCo"
+                        maxlength="3"
+                        pattern="[0-9]{3}"
+                        placeholder="056"
+                        size="3"
+                        required
+                    >
+                    <input
+                        type="text"
+                        name="SecuOrd"
+                        maxlength="3"
+                        pattern="[0-9]{3}"
+                        placeholder="005"
+                        size="3"
+                        required
+                    >
+                    <input
+                        type="text"
+                        name="SecuKey"
+                        maxlength="2"
+                        pattern="[0-9]{2}"
+                        placeholder="22"
+                        size="2"
+                    >
                 </td>
             </tr>     
 
             <tr>   
                 <td>
-                <label for="NPassport">Numéro du passeport:</label> 
+                    <label for="NPassport">Numéro du passeport:</label> 
                 </td>
                 
                 <td>
-                <input 
-                    type="text" 
-                    name="N° Passport11" 
-                    maxlength="2"
-                    pattern="[0-9]{2}" 
-                    placeholder="59"
-                    id="NPassport"
-                    size="2"
-                    required
-                >
+                    <input 
+                        type="text" 
+                        name="N° Passport11" 
+                        maxlength="2"
+                        pattern="[0-9]{2}" 
+                        placeholder="59"
+                        id="NPassport"
+                        size="2"
+                        required
+                    >
                 <input
                     type="text"
                     name="N° PassportXX"
@@ -306,58 +307,59 @@
                     size="2"
                     required
                 >
-                <input 
-                    type="text" 
-                    name="N° Passport11111" 
-                    maxlength="5"
-                    pattern="[0-9]{5}" 
-                    placeholder="56893"
-                    size="5"
-                    required
-                >
+                    <input 
+                        type="text" 
+                        name="N° Passport11111" 
+                        maxlength="5"
+                        pattern="[0-9]{5}" 
+                        placeholder="56893"
+                        size="5"
+                        required
+                    >
                 </td>
             </tr>    
 
             <tr>    
                 <td>
-                <label for="IssueDatePassport">Date de délivrance du passeport:</label>      
+                    <label for="IssueDatePassport">Date de délivrance du passeport:</label>      
                 </td>
                 
                 <td>
-                <input 
-                    type="date" 
-                    name="IssueDate Passeport" 
-                    id="IssueDatePassport"
-                    required
-                >
+                    <input 
+                        type="date" 
+                        name="IssueDate Passeport" 
+                        id="IssueDatePassport"
+                        required
+                    >
                 </td>
             </tr>    
 
             <tr>    
                 <td>
-                <label for="FinPasseport">Date de validité du passeport:</label>     
+                    <label for="FinPasseport">Date de validité du passeport:</label>     
                 </td>
                 
                 <td>
-                <input 
-                    type="date" 
-                    name="FinPasseport" 
-                    id="FinPasseport"
-                    required
-                >   
+                    <input 
+                        type="date" 
+                        name="FinPasseport" 
+                        id="FinPasseport"
+                        required
+                    >   
                 </td>
             </tr>
 
             <tr>
                 <td>
-            <input 
-                type="submit" 
-                name="submit" 
-                value="Confirmer"
-            >
-            </td>
+                    <input 
+                        type="submit" 
+                        name="submit" 
+                        value="Confirmer"
+                    >
+                </td>
 
             </tr>
         </form>
         </table>
+        </fieldset>
     </body>
