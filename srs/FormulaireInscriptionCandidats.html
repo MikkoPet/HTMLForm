@@ -10,11 +10,14 @@
             Formulaire d'inscription pour candidat.
         </h1>
 
+        <table>
         <form>
-            
-
-            <fieldset>
-                <label for="Prenom">Prénom:</label>                
+            <tr>
+                <td>
+                <label for="Prenom">Prénom:</label>  
+                </td>
+                
+                <td>
                 <input 
                     type="text" 
                     name="Prénom" 
@@ -22,10 +25,17 @@
                     id="Prenom"
                     required
                 >
-            </fieldset>
+                </td>
 
-            <fieldset>    
-                <label for="Nom">Nom:</label>                
+            </tr>
+
+            <tr>    
+
+                <td>
+                <label for="Nom">Nom:</label>    
+                </td>
+                
+                <td>
                 <input 
                     type="text" 
                     name="Nom" 
@@ -33,10 +43,15 @@
                     id="Nom" 
                     required
                 >
-            </fieldset>    
+                </td>
+            </tr>    
 
-            <fieldset>    
-                <label for="Age">Age:</label>                
+            <tr>    
+                <td>
+                <label for="Age">Age:</label>   
+                </td>
+                
+                <td>
                 <input 
                     type="number" 
                     name="Age" 
@@ -46,16 +61,26 @@
                     id="Age" 
                     required 
                 >
-            </fieldset>    
+                </td>
+            </tr>    
 
-            <fieldset>   
-                <label for="Sexe">Sexe:</label>                
+            <tr>   
+                <td>
+                <label for="Sexe">Sexe:</label> 
+                </td>
+
+                <td>              
                 <input type="radio" name="Sexe" id="Sexe" value="H" checked> Homme
                 <input type="radio" name="Sexe" value="F"> Femme
-            </fieldset>     
+                </td>
+            </tr>     
 
-            <fieldset>    
-                <label for="Email">Adresse Mail:</label>                
+            <tr>
+                <td>    
+                <label for="Email">Adresse Mail:</label>
+                </td>
+                
+                <td>
                 <input 
                     type="email" 
                     name="Email" 
@@ -63,10 +88,15 @@
                     id="Email" 
                     required
                 >
-            </fieldset>    
+                </td>
+            </tr>    
                 
-            <fieldset>    
-                <label for="AdresseP">Adresse Postale:</label>                
+            <tr>
+                <td>   
+                <label for="AdresseP">Adresse Postale:</label>
+                </td>          
+                
+                <td>
                 <textarea 
                     name="Adresse" 
                     placeholder="1 rue Charles de Gaulle, apt 13" 
@@ -74,10 +104,15 @@
                     required
                 >
                 </textarea>
-            </fieldset>    
+                </td>
+            </tr>    
 
-            <fieldset>    
-                <label for="CodeP">Code Postal (5 chiffres):</label>                
+            <tr>    
+                <td>
+                <label for="CodeP">Code Postal (5 chiffres):</label>  
+                </td>
+                     
+                <td>
                 <input 
                     type="text" 
                     name="Code Postal" 
@@ -88,10 +123,15 @@
                     size="5"
                     required
                 >
-            </fieldset>    
+                </td>
+            </tr>    
 
-            <fieldset>    
+            <tr>    
+                <td>
                 <label for="Ville">Ville:</label>
+                </td>
+
+                <td>
                 <input 
                     type="text" 
                     name="Ville" 
@@ -99,10 +139,15 @@
                     id="Ville" 
                     required
                 >
-            </fieldset>    
+                </td>
+            </tr>    
 
-            <fieldset>    
-                <label for="Metier">Métier exercé:</label>               
+            <tr>    
+                <td>
+                <label for="Metier">Métier exercé:</label>    
+                </td>
+                
+                <td>
                 <select name="Metier" 
                 id="Metier">
                     <option value="-" hidden selected>-</option>                    
@@ -112,10 +157,15 @@
                     <option value="CM">Community Manager</option>
                     <option value="ProdManager">Production Manager</option>
                 </select>
-            </fieldset>   
+                </td>
+            </tr>   
 
-            <fieldset>    
-                <label for="Nationalité">Nationalité:</label>              
+            <tr>    
+                <td>
+                <label for="Nationalité">Nationalité:</label>     
+                </td>
+                
+                <td>
                 <select name="Nationalité" 
                 id="Nationalité">                    
                     <option value="Française" selected>Française</option>
@@ -126,20 +176,30 @@
                     <option value="Italienne">Italienne</option>
                     <option value="Algerienne">Algerienne</option>
                 </select>
-            </fieldset>    
+                </td>
+            </tr>    
 
-            <fieldset>    
+            <tr>    
+                <td>
                 <label for="DdN">Date de Naissance:</label>               
+                </td>
+                
+                <td>
                 <input 
                     type="date"                 
                     name="DdN" 
                     id="DdN" 
                     required
                 >
-            </fieldset>    
+                </td>
+            </tr>    
                 
-            <fieldset>    
-                <label for="VdN">Ville de Naissance:</label>                
+            <tr>    
+                <td>
+                <label for="VdN">Ville de Naissance:</label>    
+                </td>
+                
+                <td>
                 <input 
                     type="text" 
                     name="VdN" 
@@ -147,10 +207,15 @@
                     id="VdN" 
                     required
                 >
-            </fieldset>    
+                </td>
+            </tr>    
 
-            <fieldset>   
-                <label for="Secu">Numéro de sécurité sociale (sans espaces):</label>                
+            <tr>   
+                <td>
+                <label for="Secu">Numéro de sécurité sociale (sans espaces):</label> 
+                </td>
+                
+                <td>
                 <input 
                     type="text" 
                     name="N°SecGEND" 
@@ -214,10 +279,15 @@
                     placeholder="22"
                     size="2"
                 >
-            </fieldset>     
+                </td>
+            </tr>     
 
-            <fieldset>   
-                <label for="NPassport">Numéro du passeport:</label>               
+            <tr>   
+                <td>
+                <label for="NPassport">Numéro du passeport:</label> 
+                </td>
+                
+                <td>
                 <input 
                     type="text" 
                     name="N° Passport11" 
@@ -245,32 +315,49 @@
                     size="5"
                     required
                 >
-            </fieldset>    
+                </td>
+            </tr>    
 
-            <fieldset>    
-                <label for="IssueDatePassport">Date de délivrance du passeport:</label>              
+            <tr>    
+                <td>
+                <label for="IssueDatePassport">Date de délivrance du passeport:</label>      
+                </td>
+                
+                <td>
                 <input 
                     type="date" 
                     name="IssueDate Passeport" 
                     id="IssueDatePassport"
                     required
                 >
-            </fieldset>    
+                </td>
+            </tr>    
 
-            <fieldset>    
-                <label for="FinPasseport">Date de validité du passeport:</label>                
+            <tr>    
+                <td>
+                <label for="FinPasseport">Date de validité du passeport:</label>     
+                </td>
+                
+                <td>
                 <input 
                     type="date" 
                     name="FinPasseport" 
                     id="FinPasseport"
                     required
-                >
-            </fieldset>    
-            
+                >   
+                </td>
+            </tr>
+
+            <tr>
+                <td>
             <input 
                 type="submit" 
                 name="submit" 
                 value="Confirmer"
             >
+            </td>
+
+            </tr>
         </form>
+        </table>
     </body>
